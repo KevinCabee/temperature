@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ededed;
+    height: 400rem;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+
+#result{
+    background-color: #dedede;
+    padding: 0px 5px;
+}
+
+
+.answer{
+    display: flex;
+}
+
+.converter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    width: 100%;
+}
+
+.weathericons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+
+}
+
+.container{
+    width: 20%;
+}
