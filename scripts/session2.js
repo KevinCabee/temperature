@@ -12,7 +12,7 @@ function convertFahrenheit(){
     
     temperatureResult.innerHTML= `
     <p> The conversion of Celcius (${temperature}°) to Fahrenheit is (${Fahrenheit}° ) </p>
-    `
+    `;
 }
 
 
