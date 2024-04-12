@@ -79,21 +79,20 @@ function login() {
 
 function convertTemperature() {
 
-let temperature = Number(prompt("Enter temperature"));
-let scale = (prompt("Enter C for Celcius or F for Fahrenheit"));
-let scaleC ="C" && "c";
-let scaleF ="F" && "f";
-let Fahrenheit = (temperature * 9/5 + 32);
-let Celcius = ((temperature - 32) * 5/9);
-let result = document.getElementById("result");
+    var temperature = Number(prompt("Enter temperature"));
+    let scale = (prompt("Enter C for Celcius or F for Fahrenheit"));
+    // const scaleC ="C" && "c";
+    // const scaleF ="F" && "f";
+    let result = document.getElementById("result");
 
 
-if(scale==scaleC){
-    result.innerHTML = `<p> The conversion of (${temperature}°C)Celcius to Fahrenheit is (${Fahrenheit}°F ) </p>`;
-}else if(scale==scaleF){
-    result.innerHTML = `<p> The conversion of (${Fahrenheit}°F ) Fahrenheit  to Celcius is(${temperature}°C)</p>`;
+    if(scale.toUpperCase() =="C"){
+        let Fahrenheit = ((temperature * 9/5) + 32);
+        result.innerHTML = `<p> The conversion of (${temperature}°C)Celcius to Fahrenheit is (${Fahrenheit}°F ) </p>`;
+    }else if(scale.toUpperCase()=="F"){
+        let Celcius = ((temperature - 32) * 5/9);
+        result.innerHTML = `<p> The conversion of (${Celcius}°C ) Fahrenheit  to Celcius is(${temperature}°C)</p>`;
+    }else{
+        result.innerHTML = `<p> Please, choose the correct temperature scale. :) </p>`;
+    };
 }
-}
-
-
-

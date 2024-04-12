@@ -1,4 +1,0 @@
-# temperature
-# temperature
-# tempProject
-# tempProject
